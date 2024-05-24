@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "redux": "^5.0.1",
+    "redux-devtools-extension": "^2.13.9",
     "webpack-cli": "^5.1.4"
   }
 }
