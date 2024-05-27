@@ -1,4 +1,21 @@
-import * as actions from "./actionTypes";
+import { combineReducers } from "redux";
+import entitiesReducer from "./entities";
+
+export default combineReducers({
+  entities: entitiesReducer,
+});
+
+/*import { combineReducers } from "redux";
+import bugsReducer from "./bugs";
+import projectsReducer from "./projects";
+import projects from "./projects";
+
+export default combineReducers({
+  bugs: bugsReducer,
+  projects: projectsReducer,
+});*/
+
+/*import * as actions from "./actionTypes";
 
 let lastId = 0;
 
@@ -25,4 +42,4 @@ export default function reducer(state = [], action) {
     default:
       return state;
   }
-}
+}*/
